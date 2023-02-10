@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<title>🏡</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+<body>
+
+  
+  <nav>
+    <a href="./"><img class="pin" src="./img/loc.png" alt="Mountain View" style="width:2.8rem;"></a> 
+  </nav>
+  
+  <div id='map-id' style='height:60vh; width: auto;'></div>
+  
+  <h2>
+    Stunning Seven Bedroom House,
+    All Double Bedrooms. £130.38 per person per week.
+    Contact to book your viewing now!
+  </h2>
+
+<div class="partition-1">
+  <div class="w3-container">
+
+    <div>
+      <ul id="header">
+        <li>
+          Council Tax - Student Exempt with council tax exemption certificate.
+        </li>
+        <br>
+        <li>
+          - ** STUDENTS ** BILLS INCLUDED ** SIX BATHROOMS
+        </li>
+        <br>
+        <li>
+          Stunning Seven Bedroom House, All Double Bedrooms. £130.38 per person per week.
+        </li>
+        <br>
+        <li>
+          Contact  to book your viewing now!
+        </li>
+        <br>
+        <li>
+          Council Tax - Student Exempt with council tax exemption certificate.
+        </li>
+        <br>
+        <li>
+          Brochures
+        </li>
+        <br>
+        <li>
+          Wyndcliffe Road, Southsea
+          Brochure
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="head">
+      <h2 style="font-size: 2rem;">Wyndcliffe Road, Southsea</h2>
+    </div>
+      
+    <ul id="header">
+      
+      <li style="font-size: 14px;"> 
+        <a href="./index.html" style="text-decoration: none;">
+          <span>See map
+            <img class="pin" src="./img/loc.png" alt="Mountain View" style="width:50px;height:50px;">
+          </span>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+      <li>
+        <span>£130 per-person pw</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+    
+      <li>
+        <span>£521 per-person pcm</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+      <br>
+      <li>
+        <span>£913 pw</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+    
+      <li>
+        <span>£3,955 pcm</span>
+        <i class="fa fa-angle-right"></i>
+      </li>     
+    </ul>
+    <h2>
+      Seven Bedroom House,
+      £130.38 per person per week.     
+      Contact to book your viewing now!
+    </h2>
+      
+    <hr>
+    </div>
+    
+    <div id="kitchen3" class="picture w3-display-container" style="display:none">
+      <img id="imgName" src="./img/kitchen3.jpeg" alt="kitchen3" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Kitchen 3</div>
+    </div>
+    
+    <div id="living1" class="picture w3-display-container" style="display:none">
+      <img id="imgName" src="./img/living1.jpeg" alt="living1" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Living Room 2</div>
+    </div>
+
+    <div id="living2" class="picture w3-display-container" style="display:none">
+      <img id="imgName" src="./img/living2.jpeg" alt="living2" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Living Room 1</div>
+    </div>
+
+    <div id="bed1" class="picture w3-display-container" style="display:none">
+      <img id="imgName" src="./img/bed1.jpeg" alt="bed1" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" class="w3-display-topright w3-button w3-transparent">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Bed 1</div>
+    </div>
+
+    <div id="bed2" class="picture w3-display-container" style="display:none">
+      <img id="imgName" src="./img/bed2.jpeg" alt="bed2" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Bed 2</div>
+    </div>
+
+    <div id="bed3" class="picture w3-display-container" style="display:none">
+      <img id="imgName" src="./img/bed3.jpeg" alt="bed3" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Bed 3</div>
+    </div>
+
+    <div class="w3-row-padding">
+
+      <div class="w3-col s4 w3-container">
+        <a onclick="openImg('kitchen3');">
+          <img id="imgName" src="./img/kitchen3.jpeg" alt="kitchen3" style="width:100%; height: auto; display: none;">
+        </a>
+      </div>
+      <div class="w3-col s4 w3-container">
+        <a onclick="openImg('living1');">
+          <img id="imgName" src="./img/living1.jpeg" alt="Snow" style="width:100%; height: auto;">
+        </a>
+      </div>
+      <div class="w3-col s4 w3-container">
+        <a onclick="openImg('living2');">
+          <img id="imgName" src="./img/living2.jpeg" alt="Nature" style="width:100%; height: auto;">
+        </a>
+      </div>
+      <div class="w3-col s4 w3-container">
+        <a onclick="openImg('bed1');">
+          <img id="imgName" src="./img/bed1.jpeg" alt="bed1" style="width:100%; height: auto;">
+        </a>
+      </div>
+      <div class="w3-col s4 w3-container">
+        <a onclick="openImg('bed2');">
+          <img id="imgName" src="./img/bed2.jpeg" alt="bed2" style="width:100%; height: auto;">
+        </a>
+      </div>
+      <div class="w3-col s4 w3-container">
+        <a onclick="openImg('bed3');">
+          <img id="imgName" src="./img/bed3.jpeg" alt="bed3" style="width:100%; height: auto;">
+        </a>
+      </div>
+  </div>
+  <br>
+  <p> 
+    Tenancy info
+    Added on 23/11/2022
+    Letting details
+    Let available date: 01/09/2023
+
+    Deposit: £1,750
+
+    Min. Tenancy: Ask agent
+    Furnish type: Furnished
+
+    PROPERTY TYPE
+    House
+    7 BEDROOMS
+    6 BATHROOMS
+  </p>
+</div>
+<script>
+
+const mapId = 'map-id';
+const defaultCoords = [50.792073, -1.063223];
+const defaultZoom = 13;
+const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+const tileAttrib = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+let markers = [];
+let map;
+
+map = L.map(mapId).setView(defaultCoords, defaultZoom);
+map.scrollWheelZoom.disable();
+map.doubleClickZoom.disable();
+map.touchZoom.disable();
+map.boxZoom.disable();
+
+
+L.tileLayer(tileUrl, {
+attribution: tileAttrib
+}).addTo(map);
+
+const defaultMarker = L.marker(defaultCoords, {
+draggable: true
+}).addTo(map).bindPopup('This is Southsea ༆');
+
+function createMarker(coords) {
+let markerId;
+if (markers.length < 1) markerId = 0
+else markerId = markers[markers.length - 1]._id + 1;
+
+const myMarker = L.marker(coords, {
+draggable: true
+});
+
+myMarker._id = markerId;
+
+const popupContent =
+  `<p>Your Information</p></br>
+  <textarea id="msg" type=text value=""></textarea></br>
+  <button onclick="clearMarker(${markerId})">Clear Marker</button>
+  <button onclick="addMessage(${markerId})">Add Message</button>
+  <button onclick="saveMessage(${markerId})">Save Message</button>
+  </br>
+  <ul id="msgList_${markerId}"></ul>`;
+  const myPopup = myMarker.bindPopup(popupContent, {
+    closeButton: false
+  });
+  map.addLayer(myMarker);
+  markers.push(myMarker);
+
+  return markerId;
+}
+
+let markerId;
+
+function addMessage(markerId) {
+
+  const msg = document.getElementById("msg").value;
+  const msgList = document.getElementById("msgList_" + markerId);
+  const newMsg = document.createTextNode(msg);
+  msgList.appendChild(document.createElement("li")).appendChild(newMsg);
+}
+
+function saveMessage(markerId) {
+
+  const marker = markers.find(marker => marker._id === markerId);
+  const msgList = document.getElementById("msgList_" + markerId);
+  const messages = [];
+  for (let i = 0; i < msgList.childNodes.length; i++) {
+    messages.push(msgList.childNodes[i].textContent);
+  }
+  localStorage.setItem(`marker_${markerId}_msg` + `marker_${markerId}_coords`, JSON.stringify(messages + marker.getLatLng()));
+}
+
+
+function clearMarker(id) {
+
+  const marker = markers.find(marker => marker._id === id);
+  map.removeLayer(marker);
+  markers = markers.filter(marker => marker._id !== id);
+}
+
+
+map.on('click', function(e) {
+  createMarker(e.latlng);
+});
+
+
+    // map through each image and change the image every 5 seconds
+    var images = ["./img/kitchen3.jpeg", "./img/living2.jpeg", "./img/living1.jpeg", "./img/bed1.jpeg", "./img/bed2.jpeg", "./img/bed3.jpeg"];
+  var i = 0;
+  function changeImage() {
+    document.getElementById("imgName").src = images[i];
+    i++;
+    if (i == images.length) {
+      i = 0;
+    } 
+  }
+  setInterval(changeImage, 4500);
+
+  function openImg(imgName) {
+    var i, x;
+    x = document.getElementsByClassName("picture");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(imgName).style.display = "block";
+  }
+
+  changeImage()
+
+</script>
+</body>
+</html>  
