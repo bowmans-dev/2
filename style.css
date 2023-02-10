@@ -1,39 +1,25 @@
+:root {
+  --background-color: #22272e;
+}
+
+:root {
+  color-scheme: dark light;
+}
+
 body {
   padding: 5%;
+  background-color: var(--background-color);
+}
+
+.wrapper {
+  background-color: var(--background-color);
 }
 
 .partition-1 {
   text-align: center;
 }
 
-div > button {
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-  cursor: pointer;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  font-weight: normal;
-  letter-spacing: normal;
-  text-rendering: optimizeSpeed;
-  border: none;
-  padding: 0;
-  color: #107a84;
-  display: flex;
-  margin: 0;
-  font-size: 20px;
-  font-family: Effra-Medium,Tahoma,sans-serif;
-  line-height: 24px;
-}
-
-h2 {
-  font-family: Effra-Medium,Tahoma,sans-serif;
-  font-size: 28px;
-  line-height: 34px;
-  color: #107a84;
-  margin-top: 50px;
-  padding: 0;
-}
-
+/* -----------------------------------Leaflet Map:  */
 nav {
   height: 3rem;
   background-color: #09425e; 
@@ -46,10 +32,9 @@ div#map-id.leaflet-container {
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
 }
-
 .leaflet-popup-content p {
-	margin: 0px 0;
-	}
+  margin: 0px 0;
+}
 .leaflet-popup-content-wrapper {
   padding: 0;
   }
@@ -60,10 +45,14 @@ div#map-id.leaflet-container {
   cursor: pointer;
   padding: 0.2rem;
 }
-
+img.leaflet-marker-icon {
+  opacity: 70%;
+  cursor: pointer;
+}
+img.leaflet-marker-icon:hover {
+  opacity: 100%;
+}
 textarea#msg {
-  /* width: 100%;
-  height: 100%; */
   min-width: max-content;
   min-height: max-content;
   border: 0;
@@ -77,67 +66,128 @@ textarea#msg {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+div > button {
+  color: #539bf5;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-rendering: optimizeSpeed;
+  border: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+  font-size: 20px;
+  font-family: Effra-Medium,Tahoma,sans-serif;
+  line-height: 24px;
+}
+/* ------------------------------------------___End of Leaflet Map*/
+
+
+h2 {
+  font-family: Effra-Medium,Tahoma,sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 50px;
+  padding: 0;
+}
+
+#road {
+  color: #fff;
+}
+
+p {
+  color: #539bf5;
+  font-family: Effra-Medium,Tahoma,sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+  padding: 30px;
+}
+
 ul {
+  background-color: #09425e;
+  list-style-type: none;
+  padding-left: 49px;
+  padding: 1110;
+  overflow: hidden;
+  color: #fff;
+  line-height: 70px;
+  border-radius: 75px;
   text-align: center;
 }
+
+ul#header {
+  line-height: 1.2rem;
+  padding: 2rem;
+}
+
 ul#msgList {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-p {
-  font-family: Effra-Medium,Tahoma,sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  color: #107a84;
-  margin: 0;
-  padding: 30px;
-}
-
-.list {
+.list{
   width: 300px;
   background:white;
   box-shadow:2px 2px 2px 2px black ;
-}
-
-.list{
   position:absolute;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 49px;
-  padding: 1110;
-  overflow: hidden;
-  background-color: #09425e;
-  color: #fff;
-  line-height: 70px;
-  border-radius: 75px;
+#imgName {
+  padding: 0.5rem;
 }
 
-ul#header {
-  line-height: 1.5rem;
-  padding: 2rem;
-}
-
-img.leaflet-marker-icon {
-  opacity: 70%;
-  cursor: pointer;
-}
-img.leaflet-marker-icon:hover {
-  opacity: 100%;
-}
-img:hover {
-  opacity: 100%;
-}
 #imgName:hover {
   cursor: pointer;
   opacity: 100%;
 }
-#imgName {
-  padding: 0.5rem;
+
+
+/*  users preferences */
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --background-color: white;
+  }
+  div .wrapper {
+    --background-color: white;
+  }
+  div > button {
+    color: #107a84;
+  }
+  h2 {
+    color:#107a84;
+  }
+  p {
+    color: #107a84;
+  }
+  ul {
+    background-color: #09425e;
+  }
+}
+@media (prefers-color-scheme: dark) {
+
+  div .wrapper {
+    --background-color: #22272e;
+  }
+  div > button {
+    color: #539bf5;
+  }
+  h2 {
+    color: #539bf5;
+  }
+  p {
+    color: #539bf5;
+  }
+  ul {
+    background-color:#2d333b;
+  }
 }
