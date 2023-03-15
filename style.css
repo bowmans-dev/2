@@ -1,9 +1,36 @@
 :root {
   --background-color: #22272e;
+
+  --main-web-font-size: calc(1.325rem + 0.9vw);
+  --main-mobile-font-size: 1.525rem;
+  
+  --h2-web-font-size: calc(0.8rem);
+  --h2-mobile-font-size: 0.7rem;
+
+  --span-web-font-size: 1.2rem;
+  --span-medium-font-size: 1.1rem;
+  --span-small-font-size: 1rem;
+  --span-xs-font-size: 0.9rem;
+  
+  --p-web-font-size: 1.2rem;
+  --p-medium-font-size: 1.1rem;
+  --p-small-font-size: 1rem;
+  --p-xs-font-size: 0.9rem;
+  
+  --li-web-font-size: 1rem;
+  --li-medium-font-size: 0.9rem;
+  --li-small-font-size: 0.8rem;
+  --li-xs-font-size: 0.7rem;
+
 }
 
 :root {
   color-scheme: dark light;
+}
+
+html {
+  margin: 10%;
+  color: white;
 }
 
 body {
@@ -17,6 +44,10 @@ body {
 
 .partition-1 {
   text-align: center;
+}
+
+li {
+  font-size: var(--li-web-font-size);
 }
 
 /* -----------------------------------Leaflet Map:  */
@@ -61,10 +92,11 @@ textarea#msg {
   outline: teal;
   resize: none;
   overflow: hidden;
-  color: #107a84;
+  color: #000000;
   font-family: Effra-Medium,Tahoma,sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--p-small-font-size);
   line-height: 2rem;
+  background-color: #fff;
 }
 div > button {
   color: #539bf5;
@@ -80,7 +112,8 @@ div > button {
   padding: 0;
   display: flex;
   margin: 0;
-  font-size: 20px;
+  /* font-size: 20px; recently changed */
+  font-size: 1.5rem;
   font-family: Effra-Medium,Tahoma,sans-serif;
   line-height: 24px;
 }
@@ -89,7 +122,7 @@ div > button {
 
 h2 {
   font-family: Effra-Medium,Tahoma,sans-serif;
-  font-size: 24px;
+  font-size: var(--h2-mobile-font-size);
   line-height: 34px;
   margin-top: 50px;
   padding: 0;
@@ -102,7 +135,7 @@ h2 {
 p {
   color: #539bf5;
   font-family: Effra-Medium,Tahoma,sans-serif;
-  font-size: 12px;
+  font-size: var(--p-web-font-size);
   line-height: 20px;
   margin: 0;
   padding: 30px;
@@ -152,7 +185,7 @@ ul#msgList {
 
 
 /*  users preferences */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
 
   :root {
     --background-color: white;
@@ -172,7 +205,7 @@ ul#msgList {
   ul {
     background-color: #09425e;
   }
-}
+} */
 @media (prefers-color-scheme: dark) {
 
   div .wrapper {
@@ -190,4 +223,25 @@ ul#msgList {
   ul {
     background-color:#2d333b;
   }
+}
+
+@media screen and (max-width: 800px ) {
+  html {
+    margin: 0%;
+  }
+  div#map-id.leaflet-container {
+    height: 70vh;
+  }
+  section {
+    max-height: 90vh;
+  }
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+}
+
+span {
+  color: white;
 }
