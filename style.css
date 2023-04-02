@@ -31,6 +31,7 @@
 html {
   margin: 10%;
   color: white;
+  margin-top: 0;
 }
 
 body {
@@ -40,6 +41,7 @@ body {
 
 .wrapper {
   background-color: var(--background-color);
+  display: flex;
 }
 
 .partition-1 {
@@ -51,6 +53,9 @@ li {
 }
 
 /* -----------------------------------Leaflet Map:  */
+div#map-id {
+  height:40vh;
+}
 nav {
   height: 3rem;
   background-color: #09425e; 
@@ -119,6 +124,22 @@ div > button {
 }
 /* ------------------------------------------___End of Leaflet Map*/
 
+button {
+  border-style: none;
+  background-color: transparent;
+}
+
+span {
+  color: white;
+}
+
+img {
+  /* width: 60%; */
+  /* max-height: 40vh; */
+  width: 60%;
+	  margin: auto;
+	  display: block;
+}
 
 h2 {
   font-family: Effra-Medium,Tahoma,sans-serif;
@@ -183,29 +204,6 @@ ul#msgList {
   opacity: 100%;
 }
 
-
-/*  users preferences */
-/* @media (prefers-color-scheme: light) {
-
-  :root {
-    --background-color: white;
-  }
-  div .wrapper {
-    --background-color: white;
-  }
-  div > button {
-    color: #107a84;
-  }
-  h2 {
-    color:#107a84;
-  }
-  p {
-    color: #107a84;
-  }
-  ul {
-    background-color: #09425e;
-  }
-} */
 @media (prefers-color-scheme: dark) {
 
   div .wrapper {
@@ -225,6 +223,30 @@ ul#msgList {
   }
 }
 
+@media screen and (min-width: 1000px ) {
+
+  img {
+      max-width: 40vw;
+      width: 40%;
+      margin: auto;
+      display: block;
+  }
+
+  #imgName {
+    height: auto;
+  }
+  #map-id {
+    height: 80vh;
+  }
+  
+}
+
+@media screen and (max-width: 1000px ) {
+  .wrapper {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 800px ) {
   html {
     margin: 0%;
@@ -235,13 +257,4 @@ ul#msgList {
   section {
     max-height: 90vh;
   }
-}
-
-button {
-  border-style: none;
-  background-color: transparent;
-}
-
-span {
-  color: white;
 }
