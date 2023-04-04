@@ -53,6 +53,9 @@ li {
 }
 
 /* -----------------------------------Leaflet Map:  */
+div#map-container {
+  margin: 2rem;
+}
 div#map-id {
   height:40vh;
 }
@@ -134,11 +137,9 @@ span {
 }
 
 img {
-  /* width: 60%; */
-  /* max-height: 40vh; */
   width: 60%;
-	  margin: auto;
-	  display: block;
+	margin: auto;
+	display: block;
 }
 
 h2 {
@@ -237,6 +238,7 @@ ul#msgList {
   }
   #map-id {
     height: 80vh;
+    /* min-height: 70vh; */
   }
   
 }
@@ -252,7 +254,7 @@ ul#msgList {
     margin: 0%;
   }
   div#map-id.leaflet-container {
-    height: 70vh;
+    height: 50vh;
   }
   section {
     max-height: 90vh;

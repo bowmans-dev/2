@@ -4,7 +4,7 @@ function showMap() {
 
 const mapId = 'map-id';
 const defaultCoords = [50.792073, -1.063223];
-const defaultZoom = 13;
+const defaultZoom = 12;
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const tileAttrib = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 let markers = [];

@@ -9,68 +9,48 @@
 <script defer src="./script.js"></script>
 <body>
      
-
-  
-  <br></br>
-  
-  
   <div class="partition-1">
     <div class="w3-container">
 
-      <div id="map-container">
-        <nav>
-          <a href="./"><img class="pin" src="./img/loc.png" alt="Location Marker Logo" style="width:2.8rem;"></a> 
-        </nav>
-        
-        <div id='map-id' style='height:50vh; width: auto;'></div>
+      <div class="head">
+        <h2>Winter Road, Southsea</h2>
       </div>
-      
+
+      <ul id="header">
+
+        <li style="font-size: 14px;"> 
+          <button onclick="showMap()">
+            <a href="#map-container">
+              <img class="pin" src="./img/loc.png" alt="location pin" style="width:50px;height:50px;">
+            </a>
+          </button>
+          <i class="fa fa-angle-right"></i>
+        </li>
+        
+        <li>
+          <span>£130 per-person pw</span>
+          <i class="fa fa-angle-right"></i>
+        </li>
+        
+        <li>
+          <span>£521 per-person pcm</span>
+          <i class="fa fa-angle-right"></i>
+        </li>
+        
+        <br>
+        
+        <li>
+          <span>£913 pw</span>
+          <i class="fa fa-angle-right"></i>
+        </li>
+        
+        <li>
+          <span>£3,955 pcm</span>
+          <i class="fa fa-angle-right"></i>
+        </li> 
+        
+      </ul>
     <br>
-    <div class="head">
-      <h2>Winter Road, Southsea</h2>
-    </div>
-
-    <ul id="header">
-
-      <li style="font-size: 14px;"> 
-        <button onclick="showMap()">
-          <a href="./">
-            <img class="pin" src="./img/loc.png" alt="Mountain View" style="width:50px;height:50px;">
-          </a>
-        </button>
-        <i class="fa fa-angle-right"></i>
-      </li>
-      
-      <li>
-        <span>£130 per-person pw</span>
-        <i class="fa fa-angle-right"></i>
-      </li>
-      
-      <li>
-        <span>£521 per-person pcm</span>
-        <i class="fa fa-angle-right"></i>
-      </li>
-      
-      <br>
-      
-      <li>
-        <span>£913 pw</span>
-        <i class="fa fa-angle-right"></i>
-      </li>
-      
-      <li>
-        <span>£3,955 pcm</span>
-        <i class="fa fa-angle-right"></i>
-      </li> 
-      
-    </ul>
-
-    <h5>
-      Seven Bedroom House,
-      £130.38 per person per week.     
-      Contact to book your viewing now!
-    </h5>
-    
     <hr> 
     <br></br> 
   </div>
@@ -85,6 +65,7 @@
       All Double Bedrooms. £130.38 per person per week.
       Contact to book your viewing now!
     </h3>
+    <hr>
     <section>
       <div id="kitchen3" class="picture w3-display-container">
         <img id="imgName" src="./img/kitchen3.jpeg" alt="kitchen3" style="width:100%">
@@ -123,6 +104,11 @@
       </div>
 
       <br></br>
+      <h5>
+        Seven Bedroom House,
+        £130.38 per person per week.     
+        Contact to book your viewing now!
+      </h5>
       <br></br>
 
       <div class="w3-row-padding">
@@ -158,10 +144,6 @@
         </div>
       </div>
     </section>
-
-    <br></br>
-    <br></br>
-
     
   </div>
 
@@ -199,7 +181,16 @@
       </li>
     </ul>
   </div>
+
   <br></br>
+
+  <div id="map-container">
+    <nav>
+      <img class="pin" src="./img/loc.png" alt="Location Marker Logo" style="width:2.8rem;">
+    </nav>
+    
+    <div id='map-id' style='height: 24rem; width: auto;'></div>
+  </div>
   <hr>
   <h5> 
     Tenancy info
