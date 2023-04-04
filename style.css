@@ -238,7 +238,6 @@ ul#msgList {
   }
   #map-id {
     height: 80vh;
-    /* min-height: 70vh; */
   }
   
 }
@@ -255,8 +254,5 @@ ul#msgList {
   }
   div#map-id.leaflet-container {
     height: 50vh;
-  }
-  section {
-    max-height: 90vh;
   }
 }
